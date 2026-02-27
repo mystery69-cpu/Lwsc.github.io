@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LWSC — Student Organization</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══ NAVBAR (Person 1) ═══════════════════════════════ -->
+  <nav id="navbar">
+    <span class="nav-logo">LWSC</span>
+
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#team">Team</a></li>
+      <li><a href="#events">Events</a></li>
+      <li><a href="#contact" class="nav-cta">Join Us</a></li>
+    </ul>
+
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about"   onclick="closeMobile()">About</a>
+    <a href="#team"    onclick="closeMobile()">Team</a>
+    <a href="#events"  onclick="closeMobile()">Events</a>
+    <a href="#contact" onclick="closeMobile()">Join Us</a>
+  </div>
+
+  <!-- ═══ HERO (Person 1) ══════════════════════════════════ -->
+  <section id="hero">
+    <div class="hero-content">
+      <span class="hero-tag">Student Organization</span>
+      <h1 class="hero-title">We Are<br /><span>LWSC</span></h1>
+      <p class="hero-subtitle">
+        <!-- TODO: Add your org's one-line mission here -->
+        A student-led community focused on growth, service, and transformative impact across all spheres of society.
+      </p>
+      <div class="hero-actions">
+        <a href="#events" class="btn-primary">Upcoming Events</a>
+        <a href="#about"  class="btn-secondary">Learn More</a>
+      </div>
+    </div>
+    <div class="scroll-hint">
+      <div class="scroll-line"></div>
+      Scroll to explore
+    </div>
+  </section>
+
+  <!-- ═══ CARD GRID (Person 1) ════════════════════════════ -->
+  <section id="cards">
+    <div class="cards-grid">
+
+      <a href="#about" class="card">
+        <div class="card-icon">01</div>
+        <h3 class="card-title">Who We Are</h3>
+        <p class="card-desc">Learn about our mission, values, and the people behind LWSC.</p>
+        <span class="card-arrow">→</span>
+      </a>
+
+      <a href="#team" class="card">
+        <div class="card-icon">02</div>
+        <h3 class="card-title">Meet the Team</h3>
+        <p class="card-desc">Get to know the members and leaders driving our work forward.</p>
+        <span class="card-arrow">→</span>
+      </a>
+
+      <a href="#events" class="card">
+        <div class="card-icon">03</div>
+        <h3 class="card-title">Take Action</h3>
+        <p class="card-desc">Browse upcoming events and find ways to get involved in the community.</p>
+        <span class="card-arrow">→</span>
+      </a>
+
+      <a href="#contact" class="card card--accent">
+        <div class="card-icon">04</div>
+        <h3 class="card-title">Join Us</h3>
+        <p class="card-desc">Become a member and be part of the change we're making on campus.</p>
+        <span class="card-arrow">→</span>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- ═══ ABOUT + TEAM — Placeholder for Person 2 ═════════ -->
+  <section id="about" class="section-stub">
+    <span class="stub-label">Person 2's Section</span>
+    <p class="stub-title">About Us &amp; Meet the Team</p>
+    <p class="stub-note">Replace this placeholder with your About Us and Meet the Team content.</p>
+  </section>
+
+  <!-- ═══ EVENTS + CONTACT — Placeholder for Person 3 ══════ -->
+  <section id="events" class="section-stub">
+    <span class="stub-label">Person 3's Section</span>
+    <p class="stub-title">Events &amp; Contact</p>
+    <p class="stub-note">Replace this placeholder with your Events cards and Contact form.</p>
+  </section>
+  <section id="contact"></section>
+
+  <!-- ═══ FOOTER (Person 1) ════════════════════════════════ -->
+  <footer>
+
+    <!-- Join Us Signup -->
+    <div class="footer-signup">
+      <div class="footer-signup-text">
+        <h3>Stay in the loop.</h3>
+        <p>Get updates on events, announcements, and ways to get involved.</p>
+      </div>
+      <form class="signup-form" id="signupForm">
+        <input type="text"  name="name"  placeholder="Your name"  required />
+        <input type="email" name="email" placeholder="Your email" required />
+        <button type="submit" class="btn-primary">Sign Up</button>
+      </form>
+      <p class="signup-success" id="signupSuccess">🎉 You're in! We'll be in touch soon.</p>
+    </div>
+
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <span class="nav-logo">LWSC</span>
+        <p>
+          <!-- TODO: Short org description for footer -->
+          Empowering students to connect, grow, and lead. Est. at University of Illinois Urbana-Champaign.
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#events">Events</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <ul>
+          <!-- TODO: Add real social links -->
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">Discord</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 LWSC Student Organization. All rights reserved.</p>
+      <div class="footer-socials">
+        <a href="#">Instagram</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">Discord</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group Project | Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Welcome to our Project</h1>
+    <p>If you see this in your browser via Live Server, you're ready to go!</p>             
+
+    <script src="script.js"></script>
+</body>
+</html> -->
