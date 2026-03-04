@@ -99,7 +99,7 @@ To check or change the settings:
 2. Click **Settings → Pages**
 3. Make sure the source is set to `main` branch / `/ (root)`
 
-Our live site is at: **https://lwsc.github.io**
+Our live site is at: **https://lwsc-cu.github.io/**
 
 ---
 
