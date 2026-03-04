@@ -52,7 +52,7 @@ function togglePastEvent(el) {
   el.classList.toggle('open');
 }
 
-// ── Slideshow auto-advance ──
+// ── Slideshow auto-advance for past events ──
 function initSlideshows() {
   document.querySelectorAll('.slideshow').forEach(show => {
     const slides = show.querySelector('.slides');
