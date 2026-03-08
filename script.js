@@ -42,7 +42,7 @@ if (signupForm) {
   });
 }
 
-// ── Event expand/collapse ──
+// ── Event expand/collapse ──--------------------
 function toggleEvent(el) {
   el.classList.toggle('open');
 }
@@ -88,6 +88,7 @@ function initSlideshows() {
 }
 
 initSlideshows();
+//----------END SCRIPT FOR EVENTS
 
 // ── Responsive: collapse cards to 2 col on tablet ────────
 // (CSS handles mobile, this adjusts mid-size screens via JS if needed)
