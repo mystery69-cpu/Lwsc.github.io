@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,6 +11,7 @@
     rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
   <!-- ═══ NAVBAR (Person 1) ═══════════════════════════════ -->
@@ -20,7 +22,9 @@
       <li><a href="#about">About</a></li>
       <li><a href="#team">Team</a></li>
       <li><a href="#events">Events</a></li>
-      <li><a href="mailto:lwscuiuc@gmail.com?subject=Joining%20LWSC&body=Hello!%20I%20would%20like%20to%20join%20the%20club." onclick="closeMobile()">Join Us</a>
+      <li><a
+          href="mailto:lwscuiuc@gmail.com?subject=Joining%20LWSC&body=Hello!%20I%20would%20like%20to%20join%20the%20club."
+          onclick="closeMobile()">Join Us</a>
     </ul>
 
     <button class="hamburger" id="hamburger" aria-label="Toggle menu">
@@ -32,10 +36,11 @@
 
   <!-- Mobile Menu -->
   <div class="mobile-menu" id="mobileMenu">
-    <a href="#about"   onclick="closeMobile()">About</a>
-    <a href="#team"    onclick="closeMobile()">Team</a>
-    <a href="#events"  onclick="closeMobile()">Events</a>
-    <a href="mailto:lwscuiuc@gmail.com?subject=Joining%20LWSC&body=Hello!%20I%20would%20like%20to%20join%20the%20club." onclick="closeMobile()">Join Us</a>
+    <a href="#about" onclick="closeMobile()">About</a>
+    <a href="#team" onclick="closeMobile()">Team</a>
+    <a href="#events" onclick="closeMobile()">Events</a>
+    <a href="mailto:lwscuiuc@gmail.com?subject=Joining%20LWSC&body=Hello!%20I%20would%20like%20to%20join%20the%20club."
+      onclick="closeMobile()">Join Us</a>
   </div>
 
   <!-- ═══ HERO (Person 1) ══════════════════════════════════ -->
@@ -56,7 +61,7 @@
       </p>
       <div class="hero-actions">
         <a href="#events" class="btn-primary">Upcoming Events</a>
-        <a href="#about"  class="btn-secondary">Learn More</a>
+        <a href="#about" class="btn-secondary">Learn More</a>
       </div>
 
       <!-- Scroll hint lives inside content so it is never blocked -->
@@ -93,7 +98,8 @@
         <span class="card-arrow">→</span>
       </a>
 
-      <a href="mailto:lwscuiuc@gmail.com?subject=Joining%20LWSC&body=Hello!%20I%20would%20like%20to%20join%20the%20club%20and%20learn%20more%20about%20your%20upcoming%20events." class="card card--accent">
+      <a href="mailto:lwscuiuc@gmail.com?subject=Joining%20LWSC&body=Hello!%20I%20would%20like%20to%20join%20the%20club%20and%20learn%20more%20about%20your%20upcoming%20events."
+        class="card card--accent">
         <div class="card-icon">04</div>
         <h3 class="card-title">Join Us</h3>
         <p class="card-desc">Become a member and be part of the change we're making on campus.</p>
@@ -134,370 +140,383 @@
       <div class="team-grid">
         <!-- Team Member 1 -->
         <div class="team-member">
-          <div class="member-avatar"></div>
-          <h4 class="member-name">Jane Doe</h4>
+          <div class="member-avatar"
+            style="background-image: url('images/ryan_nichols.jpg'); background-size: cover; background-position: center;">
+          </div>
+          <h4 class="member-name">Ryan Nichols</h4>
           <p class="member-role">President</p>
         </div>
         <!-- Team Member 2 -->
         <div class="team-member">
-          <div class="member-avatar"></div>
-          <h4 class="member-name">John Smith</h4>
+          <div class="member-avatar"
+            style="background-image: url('images/jaden.jpg'); background-size: cover; background-position: center;">
+          </div>
+          <h4 class="member-name">Jaden Campbell</h4>
           <p class="member-role">Vice President</p>
-        </div>
-        <!-- Team Member 3 -->
-        <div class="team-member">
-          <div class="member-avatar"></div>
-          <h4 class="member-name">Alice Johnson</h4>
-          <p class="member-role">Events Coordinator</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- ═══ EVENTS + CONTACT — Placeholder for Person 3 ══════ -->
-<section id="events" class="events-section">
-  <div class="content-container">
-    <h2 class="section-title">Upcoming <span>Events</span></h2>
-    <p class="section-text">
-      Keep up with LWSC! Here's what's on the horizon.
-    </p>
+  <section id="events" class="events-section">
+    <div class="content-container">
+      <h2 class="section-title">Upcoming <span>Events</span></h2>
+      <p class="section-text">
+        Keep up with LWSC! Here's what's on the horizon.
+      </p>
 
-    <div class="calendar-wrapper">
-     
-      <!-- ── MARCH ── -->
-      <div class="calendar-month">
-        <div class="month-header">
-          <span class="month-name">March</span>
-          <span class="month-year">2026</span>
-        </div>
-        <ul class="month-events">
-          <li class="month-event" onclick="toggleEvent(this)">
-            <div class="event-day">
-              <span class="day-num">04</span>
-              <span class="day-label">Wed</span>
-            </div>
-            <div class="event-info">
-              <div class="event-title">Weekly Meeting</div>
-              <div class="event-meta">
-                <span>6:00 PM · <a href="https://maps.app.goo.gl/SZJLUjDi2aqG8bYT9" target="_blank" style="color: var(--primary);">BIF Room 3003</a></span>
-              </div>
-              <span class="event-tag">Meeting</span>
-              <div class="event-details">
-                <p class="event-desc">Join us to discuss GOTV plans for the midterm elections and hear from candidate for Champaign Executive, Sanford Hess! </p>
-              </div>
-            </div>
-          </li>
-          <li class="month-event" onclick="toggleEvent(this)">
-            <div class="event-day">
-              <span class="day-num">7</span>
-              <span class="day-label">Sat</span>
-            </div>
-            <div class="event-info">
-              <div class="event-title">Volunteering at Windsor Road Church</div>
-              <div class="event-meta">
-                <span>11:00 AM - 1:00 PM & 1:00 - 3:00 PM · <a href="https://maps.app.goo.gl/hd46xtxcMzxoxTV39" target="_blank" style="color: var(--primary);">Windsor Road Church</a></span>
-              </div>
-              <span class="event-tag">Volunteering</span>
-              <div class="event-details">
-                <p class="event-desc">Assist community shoppers during the Free Food Store shopping time. Register at the link below one day in advance! (More info provided in the link)  
-                  <a href="https://windsorroad.churchcenter.com/calendar/event/207028616" target="_blank" style="color: var(--primary);">Volunteering Link</a></span>
-                </p>
-              </div>
-            </div>
-          </li>
-          <li class="month-event" onclick="toggleEvent(this)">
-            <div class="event-day">
-              <span class="day-num">8</span>
-              <span class="day-label">Sun</span>
-            </div>
-            <div class="event-info">
-              <div class="event-title">Door Knocking for Dylan Blaha!</div>
-              <div class="event-meta">
-                <span>TBD · <a href="" target="_blank" style="color: var(--primary);">TBD</a></span>
-              </div>
-              <span class="event-tag">Volunteering</span>
-              <div class="event-details">
-                <p class="event-desc">Ask on Slack for more details!</p>
-              </div>
-            </div>
-          </li>
-          <li class="month-event" onclick="toggleEvent(this)">
-            <div class="event-day">
-              <span class="day-num">11</span>
-              <span class="day-label">Wed</span>
-            </div>
-            <div class="event-info">
-              <div class="event-title">Weekly Meeting</div>
-              <div class="event-meta">
-                <span>6:00 PM · <a href="https://maps.app.goo.gl/SZJLUjDi2aqG8bYT9" target="_blank" style="color: var(--primary);">BIF Room 3003</a></span>
-              </div>
-              <span class="event-tag">Meeting</span>
-              <div class="event-details">
-                <p class="event-desc">TBD</p>
-              </div>
-            </div>
-          </li>
-          <li class="month-event" onclick="toggleEvent(this)">
-            <div class="event-day">
-              <span class="day-num">18</span>
-              <span class="day-label">Wed</span>
-            </div>
-            <div class="event-info">
-              <div class="event-title">Weekly Meeting</div>
-              <div class="event-meta">
-                <span>6:00 PM · <a href="https://maps.app.goo.gl/SZJLUjDi2aqG8bYT9" target="_blank" style="color: var(--primary);">BIF Room 3003</a></span>
-              </div>
-              <span class="event-tag">Meeting</span>
-              <div class="event-details">
-                <p class="event-desc">TBD</p>
-              </div>
-            </div>
-          </li>
-          <li class="month-event" onclick="toggleEvent(this)">
-            <div class="event-day">
-              <span class="day-num">25</span>
-              <span class="day-label">Wed</span>
-            </div>
-            <div class="event-info">
-              <div class="event-title">Weekly Meeting</div>
-              <div class="event-meta">
-                <span>6:00 PM · <a href="https://maps.app.goo.gl/SZJLUjDi2aqG8bYT9" target="_blank" style="color: var(--primary);">BIF Room 3003</a></span>
-              </div>
-              <span class="event-tag">Meeting</span>
-              <div class="event-details">
-                <p class="event-desc">TBD</p>
-              </div>
-            </div>
-          </li>
-        </ul>
-      </div>
+      <div class="calendar-wrapper">
 
-      <!-- ── APRIL ── -->
-      <div class="calendar-month">
-        <div class="month-header">
-          <span class="month-name">April</span>
-          <span class="month-year">2026</span>
-        </div>
-        <ul class="month-events">
-          <li class="month-event" onclick="toggleEvent(this)">
-            <div class="event-day">
-              <span class="day-num">01</span>
-              <span class="day-label">Wed</span>
-            </div>
-            <div class="event-info">
-              <div class="event-title">Weekly Meeting</div>
-              <div class="event-meta">
-                <span>6:00 PM · <a href="https://maps.app.goo.gl/SZJLUjDi2aqG8bYT9" target="_blank" style="color: var(--primary);">BIF Room 3003</a></span>
-              </div>
-              <span class="event-tag">Meeting</span>
-              <div class="event-details">
-                <p class="event-desc">TBD</p>
-              </div>
-            </div>
-          </li>
-          <li class="month-event" onclick="toggleEvent(this)">
-            <div class="event-day">
-              <span class="day-num">08</span>
-              <span class="day-label">Wed</span>
-            </div>
-            <div class="event-info">
-              <div class="event-title">Weekly Meeting</div>
-              <div class="event-meta">
-                <span>6:00 PM · <a href="https://maps.app.goo.gl/SZJLUjDi2aqG8bYT9" target="_blank" style="color: var(--primary);">BIF Room 3003</a></span>
-              </div>
-              <span class="event-tag">Meeting</span>
-              <div class="event-details">
-                <p class="event-desc">TBD</p>
-              </div>
-            </div>
-          </li>
-          <li class="month-event" onclick="toggleEvent(this)">
-            <div class="event-day">
-              <span class="day-num">15</span>
-              <span class="day-label">Wed</span>
-            </div>
-            <div class="event-info">
-              <div class="event-title">Weekly Meeting</div>
-              <div class="event-meta">
-                <span>6:00 PM · <a href="https://maps.app.goo.gl/SZJLUjDi2aqG8bYT9" target="_blank" style="color: var(--primary);">BIF Room 3003</a></span>
-              </div>
-              <span class="event-tag">Meeting</span>
-              <div class="event-details">
-                <p class="event-desc">TBD</p>
-              </div>
-            </div>
-          </li>
-          <li class="month-event" onclick="toggleEvent(this)">
-            <div class="event-day">
-              <span class="day-num">22</span>
-              <span class="day-label">Wed</span>
-            </div>
-            <div class="event-info">
-              <div class="event-title">Weekly Meeting</div>
-              <div class="event-meta">
-                <span>6:00 PM · <a href="https://maps.app.goo.gl/SZJLUjDi2aqG8bYT9" target="_blank" style="color: var(--primary);">BIF Room 3003</a></span>
-              </div>
-              <span class="event-tag">Meeting</span>
-              <div class="event-details">
-                <p class="event-desc">TBD</p>
-              </div>
-            </div>
-          </li>
-          <li class="month-event" onclick="toggleEvent(this)">
-            <div class="event-day">
-              <span class="day-num">29</span>
-              <span class="day-label">Wed</span>
-            </div>
-            <div class="event-info">
-              <div class="event-title">Weekly Meeting</div>
-              <div class="event-meta">
-                <span>6:00 PM · <a href="https://maps.app.goo.gl/SZJLUjDi2aqG8bYT9" target="_blank" style="color: var(--primary);">BIF Room 3003</a></span>
-              </div>
-              <span class="event-tag">Meeting</span>
-              <div class="event-details">
-                <p class="event-desc">TBD</p>
-              </div>
-            </div>
-          </li>
-        </ul>
-      </div>
-
-      <!-- ── MAY ── -->
-      <div class="calendar-month">
-        <div class="month-header">
-          <span class="month-name">May</span>
-          <span class="month-year">2025</span>
-        </div>
-        <ul class="month-events">
-          <li class="month-event" onclick="toggleEvent(this)">
-            <div class="event-day">
-              <span class="day-num">06</span>
-              <span class="day-label">Wed</span>
-            </div>
-            <div class="event-info">
-              <div class="event-title">Weekly Meeting</div>
-              <div class="event-meta">
-                <span>6:00 PM · <a href="https://maps.app.goo.gl/SZJLUjDi2aqG8bYT9" target="_blank" style="color: var(--primary);">BIF Room 3003</a></span>
-              </div>
-              <span class="event-tag">Meeting</span>
-              <div class="event-details">
-                <p class="event-desc">TBD</p>
-              </div>
-            </div>
-          </li>
-          <li class="month-event" onclick="toggleEvent(this)">
-            <div class="event-day">
-              <span class="day-num">13</span>
-              <span class="day-label">Wed</span>
-            </div>
-            <div class="event-info">
-              <div class="event-title">Weekly Meeting</div>
-              <div class="event-meta">
-                <span>6:00 PM · <a href="https://maps.app.goo.gl/SZJLUjDi2aqG8bYT9" target="_blank" style="color: var(--primary);">BIF Room 3003</a></span>
-              </div>
-              <span class="event-tag">Meeting</span>
-              <div class="event-details">
-                <p class="event-desc">TBD</p>
-              </div>
-            </div>
-          </li>
-        </ul>
-      </div>
-
-    </div>
-<!-- ── PAST EVENTS ── -->
-    <div class="past-events">
-      <h3 class="past-events-title">Past <span>Events</span></h3>
-
-      <div class="past-events-list">
-
-        <!-- ── EVENT 1 ── -->
-        <div class="past-event" onclick="togglePastEvent(this)">
-          <div class="past-event-header">
-            <div class="past-event-header-left">
-              <span class="past-event-date">February 27, 2026</span>
-              <h4 class="past-event-name">Pie in the Face Fundraiser!</h4>
-            </div>
-            <span class="past-event-arrow">↓</span>
+        <!-- ── MARCH ── -->
+        <div class="calendar-month">
+          <div class="month-header">
+            <span class="month-name">March</span>
+            <span class="month-year">2026</span>
           </div>
-          <div class="past-event-body">
-            <div class="slideshow" data-index="0">
-              <div class="slides">
-                <div class="slide-item">
-                  <img src="images/PastEvents/PieFundraiserEvent_2.27.26/PieFundraiser4.jpeg" alt="" />
-                  <div class="slide-caption">
-                    <span class="slide-caption-date">February 27, 2026</span>
-                    <span class="slide-caption-title">Pie in the Face Fundraiser!</span>
-                  </div>
+          <ul class="month-events">
+            <li class="month-event" onclick="toggleEvent(this)">
+              <div class="event-day">
+                <span class="day-num">04</span>
+                <span class="day-label">Wed</span>
+              </div>
+              <div class="event-info">
+                <div class="event-title">Weekly Meeting</div>
+                <div class="event-meta">
+                  <span>6:00 PM · <a href="https://maps.app.goo.gl/SZJLUjDi2aqG8bYT9" target="_blank"
+                      style="color: var(--primary);">BIF Room 3003</a></span>
                 </div>
-                <div class="slide-item">
-                  <img src="images/PastEvents/PieFundraiserEvent_2.27.26/PieFundraiser5.jpeg" alt="" />
-                  <div class="slide-caption">
-                    <span class="slide-caption-date">February 27, 2026</span>
-                    <span class="slide-caption-title">Pie in the Face Fundraiser!</span>
-                  </div>
-                </div>
-                <div class="slide-item">
-                  <img src="images/PastEvents/PieFundraiserEvent_2.27.26/PieFundraiser2.jpeg" alt="" />
-                  <div class="slide-caption">
-                    <span class="slide-caption-date">February 27, 2026</span>
-                    <span class="slide-caption-title">Pie in the Face Fundraiser!</span>
-                  </div>
-                </div>
-                <div class="slide-item">
-                  <img src="images/PastEvents/PieFundraiserEvent_2.27.26/PieFundraiser3.jpeg" alt="" />
-                  <div class="slide-caption">
-                    <span class="slide-caption-date">February 27, 2026</span>
-                    <span class="slide-caption-title">Pie in the Face Fundraiser!</span>
-                  </div>
-                </div>
-                <div class="slide-item">
-                  <img src="images/PastEvents/PieFundraiserEvent_2.27.26/PieFundraiser6.jpeg" alt="" />
-                  <div class="slide-caption">
-                    <span class="slide-caption-date">February 27, 2026</span>
-                    <span class="slide-caption-title">Pie in the Face Fundraiser!</span>
-                  </div>
-                </div>
-                <div class="slide-item">
-                  <img src="images/PastEvents/PieFundraiserEvent_2.27.26/PieFundraiser7.jpeg" alt="" />
-                  <div class="slide-caption">
-                    <span class="slide-caption-date">February 27, 2026</span>
-                    <span class="slide-caption-title">Pie in the Face Fundraiser!</span>
-                  </div>
-                </div>
-                <div class="slide-item">
-                  <img src="images/PastEvents/PieFundraiserEvent_2.27.26/PieFundraiser1.jpeg" alt="" />
-                  <div class="slide-caption">
-                    <span class="slide-caption-date">February 27, 2026</span>
-                    <span class="slide-caption-title">Pie in the Face Fundraiser!</span>
-                  </div>
+                <span class="event-tag">Meeting</span>
+                <div class="event-details">
+                  <p class="event-desc">Join us to discuss GOTV plans for the midterm elections and hear from candidate
+                    for Champaign Executive, Sanford Hess! </p>
                 </div>
               </div>
-              <div class="slide-dots"></div>
-            </div>
-          </div>
+            </li>
+            <li class="month-event" onclick="toggleEvent(this)">
+              <div class="event-day">
+                <span class="day-num">7</span>
+                <span class="day-label">Sat</span>
+              </div>
+              <div class="event-info">
+                <div class="event-title">Volunteering at Windsor Road Church</div>
+                <div class="event-meta">
+                  <span>11:00 AM - 1:00 PM & 1:00 - 3:00 PM · <a href="https://maps.app.goo.gl/hd46xtxcMzxoxTV39"
+                      target="_blank" style="color: var(--primary);">Windsor Road Church</a></span>
+                </div>
+                <span class="event-tag">Volunteering</span>
+                <div class="event-details">
+                  <p class="event-desc">Assist community shoppers during the Free Food Store shopping time. Register at
+                    the link below one day in advance! (More info provided in the link)
+                    <a href="https://windsorroad.churchcenter.com/calendar/event/207028616" target="_blank"
+                      style="color: var(--primary);">Volunteering Link</a></span>
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="month-event" onclick="toggleEvent(this)">
+              <div class="event-day">
+                <span class="day-num">8</span>
+                <span class="day-label">Sun</span>
+              </div>
+              <div class="event-info">
+                <div class="event-title">Door Knocking for Dylan Blaha!</div>
+                <div class="event-meta">
+                  <span>TBD · <a href="" target="_blank" style="color: var(--primary);">TBD</a></span>
+                </div>
+                <span class="event-tag">Volunteering</span>
+                <div class="event-details">
+                  <p class="event-desc">Ask on Slack for more details!</p>
+                </div>
+              </div>
+            </li>
+            <li class="month-event" onclick="toggleEvent(this)">
+              <div class="event-day">
+                <span class="day-num">11</span>
+                <span class="day-label">Wed</span>
+              </div>
+              <div class="event-info">
+                <div class="event-title">Weekly Meeting</div>
+                <div class="event-meta">
+                  <span>6:00 PM · <a href="https://maps.app.goo.gl/SZJLUjDi2aqG8bYT9" target="_blank"
+                      style="color: var(--primary);">BIF Room 3003</a></span>
+                </div>
+                <span class="event-tag">Meeting</span>
+                <div class="event-details">
+                  <p class="event-desc">TBD</p>
+                </div>
+              </div>
+            </li>
+            <li class="month-event" onclick="toggleEvent(this)">
+              <div class="event-day">
+                <span class="day-num">18</span>
+                <span class="day-label">Wed</span>
+              </div>
+              <div class="event-info">
+                <div class="event-title">Weekly Meeting</div>
+                <div class="event-meta">
+                  <span>6:00 PM · <a href="https://maps.app.goo.gl/SZJLUjDi2aqG8bYT9" target="_blank"
+                      style="color: var(--primary);">BIF Room 3003</a></span>
+                </div>
+                <span class="event-tag">Meeting</span>
+                <div class="event-details">
+                  <p class="event-desc">TBD</p>
+                </div>
+              </div>
+            </li>
+            <li class="month-event" onclick="toggleEvent(this)">
+              <div class="event-day">
+                <span class="day-num">25</span>
+                <span class="day-label">Wed</span>
+              </div>
+              <div class="event-info">
+                <div class="event-title">Weekly Meeting</div>
+                <div class="event-meta">
+                  <span>6:00 PM · <a href="https://maps.app.goo.gl/SZJLUjDi2aqG8bYT9" target="_blank"
+                      style="color: var(--primary);">BIF Room 3003</a></span>
+                </div>
+                <span class="event-tag">Meeting</span>
+                <div class="event-details">
+                  <p class="event-desc">TBD</p>
+                </div>
+              </div>
+            </li>
+          </ul>
         </div>
 
-        <!-- ── EVENT 2 ── -->
-        <div class="past-event" onclick="togglePastEvent(this)">
-          <div class="past-event-header">
-            <div class="past-event-header-left">
-              <span class="past-event-date">October 29, 2025 - Present</span>
-              <h4 class="past-event-name">Dylan Blaha!</h4>
-            </div>
-            <span class="past-event-arrow">↓</span>
+        <!-- ── APRIL ── -->
+        <div class="calendar-month">
+          <div class="month-header">
+            <span class="month-name">April</span>
+            <span class="month-year">2026</span>
           </div>
-          <div class="past-event-body">
-            <div class="slideshow" data-index="0">
-              <div class="slides">
-                <div class="slide-item">
-                  <img src="images/PastEvents/DylanBlahaEvent/DylanBlaha_10.29.25.jpeg" alt="" />
-                  <div class="slide-caption">
-                    <span class="slide-caption-date">October 29, 2025</span>
-                    <span class="slide-caption-title">Dylan Blaha!</span>
+          <ul class="month-events">
+            <li class="month-event" onclick="toggleEvent(this)">
+              <div class="event-day">
+                <span class="day-num">01</span>
+                <span class="day-label">Wed</span>
+              </div>
+              <div class="event-info">
+                <div class="event-title">Weekly Meeting</div>
+                <div class="event-meta">
+                  <span>6:00 PM · <a href="https://maps.app.goo.gl/SZJLUjDi2aqG8bYT9" target="_blank"
+                      style="color: var(--primary);">BIF Room 3003</a></span>
+                </div>
+                <span class="event-tag">Meeting</span>
+                <div class="event-details">
+                  <p class="event-desc">TBD</p>
+                </div>
+              </div>
+            </li>
+            <li class="month-event" onclick="toggleEvent(this)">
+              <div class="event-day">
+                <span class="day-num">08</span>
+                <span class="day-label">Wed</span>
+              </div>
+              <div class="event-info">
+                <div class="event-title">Weekly Meeting</div>
+                <div class="event-meta">
+                  <span>6:00 PM · <a href="https://maps.app.goo.gl/SZJLUjDi2aqG8bYT9" target="_blank"
+                      style="color: var(--primary);">BIF Room 3003</a></span>
+                </div>
+                <span class="event-tag">Meeting</span>
+                <div class="event-details">
+                  <p class="event-desc">TBD</p>
+                </div>
+              </div>
+            </li>
+            <li class="month-event" onclick="toggleEvent(this)">
+              <div class="event-day">
+                <span class="day-num">15</span>
+                <span class="day-label">Wed</span>
+              </div>
+              <div class="event-info">
+                <div class="event-title">Weekly Meeting</div>
+                <div class="event-meta">
+                  <span>6:00 PM · <a href="https://maps.app.goo.gl/SZJLUjDi2aqG8bYT9" target="_blank"
+                      style="color: var(--primary);">BIF Room 3003</a></span>
+                </div>
+                <span class="event-tag">Meeting</span>
+                <div class="event-details">
+                  <p class="event-desc">TBD</p>
+                </div>
+              </div>
+            </li>
+            <li class="month-event" onclick="toggleEvent(this)">
+              <div class="event-day">
+                <span class="day-num">22</span>
+                <span class="day-label">Wed</span>
+              </div>
+              <div class="event-info">
+                <div class="event-title">Weekly Meeting</div>
+                <div class="event-meta">
+                  <span>6:00 PM · <a href="https://maps.app.goo.gl/SZJLUjDi2aqG8bYT9" target="_blank"
+                      style="color: var(--primary);">BIF Room 3003</a></span>
+                </div>
+                <span class="event-tag">Meeting</span>
+                <div class="event-details">
+                  <p class="event-desc">TBD</p>
+                </div>
+              </div>
+            </li>
+            <li class="month-event" onclick="toggleEvent(this)">
+              <div class="event-day">
+                <span class="day-num">29</span>
+                <span class="day-label">Wed</span>
+              </div>
+              <div class="event-info">
+                <div class="event-title">Weekly Meeting</div>
+                <div class="event-meta">
+                  <span>6:00 PM · <a href="https://maps.app.goo.gl/SZJLUjDi2aqG8bYT9" target="_blank"
+                      style="color: var(--primary);">BIF Room 3003</a></span>
+                </div>
+                <span class="event-tag">Meeting</span>
+                <div class="event-details">
+                  <p class="event-desc">TBD</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- ── MAY ── -->
+        <div class="calendar-month">
+          <div class="month-header">
+            <span class="month-name">May</span>
+            <span class="month-year">2025</span>
+          </div>
+          <ul class="month-events">
+            <li class="month-event" onclick="toggleEvent(this)">
+              <div class="event-day">
+                <span class="day-num">06</span>
+                <span class="day-label">Wed</span>
+              </div>
+              <div class="event-info">
+                <div class="event-title">Weekly Meeting</div>
+                <div class="event-meta">
+                  <span>6:00 PM · <a href="https://maps.app.goo.gl/SZJLUjDi2aqG8bYT9" target="_blank"
+                      style="color: var(--primary);">BIF Room 3003</a></span>
+                </div>
+                <span class="event-tag">Meeting</span>
+                <div class="event-details">
+                  <p class="event-desc">TBD</p>
+                </div>
+              </div>
+            </li>
+            <li class="month-event" onclick="toggleEvent(this)">
+              <div class="event-day">
+                <span class="day-num">13</span>
+                <span class="day-label">Wed</span>
+              </div>
+              <div class="event-info">
+                <div class="event-title">Weekly Meeting</div>
+                <div class="event-meta">
+                  <span>6:00 PM · <a href="https://maps.app.goo.gl/SZJLUjDi2aqG8bYT9" target="_blank"
+                      style="color: var(--primary);">BIF Room 3003</a></span>
+                </div>
+                <span class="event-tag">Meeting</span>
+                <div class="event-details">
+                  <p class="event-desc">TBD</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+      <!-- ── PAST EVENTS ── -->
+      <div class="past-events">
+        <h3 class="past-events-title">Past <span>Events</span></h3>
+
+        <div class="past-events-list">
+
+          <!-- ── EVENT 1 ── -->
+          <div class="past-event" onclick="togglePastEvent(this)">
+            <div class="past-event-header">
+              <div class="past-event-header-left">
+                <span class="past-event-date">February 27, 2026</span>
+                <h4 class="past-event-name">Pie in the Face Fundraiser!</h4>
+              </div>
+              <span class="past-event-arrow">↓</span>
+            </div>
+            <div class="past-event-body">
+              <div class="slideshow" data-index="0">
+                <div class="slides">
+                  <div class="slide-item">
+                    <img src="images/PastEvents/PieFundraiserEvent_2.27.26/PieFundraiser4.jpeg" alt="" />
+                    <div class="slide-caption">
+                      <span class="slide-caption-date">February 27, 2026</span>
+                      <span class="slide-caption-title">Pie in the Face Fundraiser!</span>
+                    </div>
+                  </div>
+                  <div class="slide-item">
+                    <img src="images/PastEvents/PieFundraiserEvent_2.27.26/PieFundraiser5.jpeg" alt="" />
+                    <div class="slide-caption">
+                      <span class="slide-caption-date">February 27, 2026</span>
+                      <span class="slide-caption-title">Pie in the Face Fundraiser!</span>
+                    </div>
+                  </div>
+                  <div class="slide-item">
+                    <img src="images/PastEvents/PieFundraiserEvent_2.27.26/PieFundraiser2.jpeg" alt="" />
+                    <div class="slide-caption">
+                      <span class="slide-caption-date">February 27, 2026</span>
+                      <span class="slide-caption-title">Pie in the Face Fundraiser!</span>
+                    </div>
+                  </div>
+                  <div class="slide-item">
+                    <img src="images/PastEvents/PieFundraiserEvent_2.27.26/PieFundraiser3.jpeg" alt="" />
+                    <div class="slide-caption">
+                      <span class="slide-caption-date">February 27, 2026</span>
+                      <span class="slide-caption-title">Pie in the Face Fundraiser!</span>
+                    </div>
+                  </div>
+                  <div class="slide-item">
+                    <img src="images/PastEvents/PieFundraiserEvent_2.27.26/PieFundraiser6.jpeg" alt="" />
+                    <div class="slide-caption">
+                      <span class="slide-caption-date">February 27, 2026</span>
+                      <span class="slide-caption-title">Pie in the Face Fundraiser!</span>
+                    </div>
+                  </div>
+                  <div class="slide-item">
+                    <img src="images/PastEvents/PieFundraiserEvent_2.27.26/PieFundraiser7.jpeg" alt="" />
+                    <div class="slide-caption">
+                      <span class="slide-caption-date">February 27, 2026</span>
+                      <span class="slide-caption-title">Pie in the Face Fundraiser!</span>
+                    </div>
+                  </div>
+                  <div class="slide-item">
+                    <img src="images/PastEvents/PieFundraiserEvent_2.27.26/PieFundraiser1.jpeg" alt="" />
+                    <div class="slide-caption">
+                      <span class="slide-caption-date">February 27, 2026</span>
+                      <span class="slide-caption-title">Pie in the Face Fundraiser!</span>
+                    </div>
                   </div>
                 </div>
-                <!-- <div class="slide-item">
+                <div class="slide-dots"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ── EVENT 2 ── -->
+          <div class="past-event" onclick="togglePastEvent(this)">
+            <div class="past-event-header">
+              <div class="past-event-header-left">
+                <span class="past-event-date">October 29, 2025 - Present</span>
+                <h4 class="past-event-name">Dylan Blaha!</h4>
+              </div>
+              <span class="past-event-arrow">↓</span>
+            </div>
+            <div class="past-event-body">
+              <div class="slideshow" data-index="0">
+                <div class="slides">
+                  <div class="slide-item">
+                    <img src="images/PastEvents/DylanBlahaEvent/DylanBlaha_10.29.25.jpeg" alt="" />
+                    <div class="slide-caption">
+                      <span class="slide-caption-date">October 29, 2025</span>
+                      <span class="slide-caption-title">Dylan Blaha!</span>
+                    </div>
+                  </div>
+                  <!-- <div class="slide-item">
                   <img src="images/event2-photo2.jpg" alt="" />
                   <div class="slide-caption">
                     <span class="slide-caption-date">February 23, 2026</span>
@@ -511,13 +530,13 @@
                     <span class="slide-caption-title">Dylan Blaha!</span>
                   </div>
                 </div> Need more Pictures -->
+                </div>
+                <div class="slide-dots"></div>
               </div>
-              <div class="slide-dots"></div>
             </div>
           </div>
-        </div>
 
-        <!-- ── EVENT 3 ── 
+          <!-- ── EVENT 3 ── 
         <div class="past-event" onclick="togglePastEvent(this)">
           <div class="past-event-header">
             <div class="past-event-header-left">
@@ -539,7 +558,7 @@
         </div>
       -->
 
-        <!-- ── TEMPLATE FOR MORE EVENTS — uncomment and fill in ──
+          <!-- ── TEMPLATE FOR MORE EVENTS — uncomment and fill in ──
         <div class="past-event" onclick="togglePastEvent(this)">
           <div class="past-event-header">
             <div class="past-event-header-left">
@@ -561,48 +580,48 @@
         </div>
         -->
 
-        <!-- ── OTHER PAST EVENTS ── -->
-        <div class="past-event" onclick="togglePastEvent(this)">
-          <div class="past-event-header">
-            <div class="past-event-header-left">
-              <h4 class="past-event-name">Other <span style="color: var(--primary);">Past Events</span></h4>
-            </div>
-            <span class="past-event-arrow">↓</span>
-          </div>
-          <div class="past-event-body">
-            <div class="slideshow">
-              <div class="slides">
-                <div class="slide-item">
-                  <img src="images/PastEvents/OtherEvents/SanfordHess_3.4.26.jpeg" alt="" />
-                  <div class="slide-caption">
-                    <span class="slide-caption-date">March 4, 2026</span>
-                    <span class="slide-caption-title">Sanford Hess Meeting!</span>
-                  </div>
-                </div>
-                <div class="slide-item">
-                  <img src="images/PastEvents/OtherEvents/ExpoNight1_2.2.26.jpeg" alt="" />
-                  <div class="slide-caption">
-                    <span class="slide-caption-date">February 2, 2026</span>
-                    <span class="slide-caption-title">Expo Night!</span>
-                  </div>
-                </div>
-                <div class="slide-item">
-                  <img src="images/PastEvents/OtherEvents/BakeSale_11.5.25.jpeg" alt="" />
-                  <div class="slide-caption">
-                    <span class="slide-caption-date">November 5, 2025</span>
-                    <span class="slide-caption-title">Bake Sale!</span>
-                  </div>
-                </div>
-                <!-- add more images here as needed -->
+          <!-- ── OTHER PAST EVENTS ── -->
+          <div class="past-event" onclick="togglePastEvent(this)">
+            <div class="past-event-header">
+              <div class="past-event-header-left">
+                <h4 class="past-event-name">Other <span style="color: var(--primary);">Past Events</span></h4>
               </div>
-              <div class="slide-dots"></div>
+              <span class="past-event-arrow">↓</span>
+            </div>
+            <div class="past-event-body">
+              <div class="slideshow">
+                <div class="slides">
+                  <div class="slide-item">
+                    <img src="images/PastEvents/OtherEvents/SanfordHess_3.4.26.jpeg" alt="" />
+                    <div class="slide-caption">
+                      <span class="slide-caption-date">March 4, 2026</span>
+                      <span class="slide-caption-title">Sanford Hess Meeting!</span>
+                    </div>
+                  </div>
+                  <div class="slide-item">
+                    <img src="images/PastEvents/OtherEvents/ExpoNight1_2.2.26.jpeg" alt="" />
+                    <div class="slide-caption">
+                      <span class="slide-caption-date">February 2, 2026</span>
+                      <span class="slide-caption-title">Expo Night!</span>
+                    </div>
+                  </div>
+                  <div class="slide-item">
+                    <img src="images/PastEvents/OtherEvents/BakeSale_11.5.25.jpeg" alt="" />
+                    <div class="slide-caption">
+                      <span class="slide-caption-date">November 5, 2025</span>
+                      <span class="slide-caption-title">Bake Sale!</span>
+                    </div>
+                  </div>
+                  <!-- add more images here as needed -->
+                </div>
+                <div class="slide-dots"></div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
   <!-- ═══ FOOTER (Person 1) ════════════════════════════════ -->
   <footer>
 
@@ -643,10 +662,15 @@
         <h4>Connect</h4>
         <ul>
           <!-- TODO: Add real social links -->
-          <li><a href="https://www.instagram.com/lwsc_uiuc?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">Instagram</a></li>
+          <li><a href="https://www.instagram.com/lwsc_uiuc?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+              target="_blank">Instagram</a></li>
           <li><a href="https://www.linkedin.com/in/chinecherem-chinonso-991643227/" target="_blank">LinkedIn</a></li>
-          <li><a href="mailto:lwscuiuc@gmail.com?subject=Joining%20LWSC&body=Hello!%20I%20would%20like%20to%20join%20the%20club%20and%20learn%20more%20about%20your%20upcoming%20events.">Join Us</a></li>
-          <li><a href="mailto:lwscuiuc@gmail.com?subject=LWSC%20Inquiry&body=Hello%20LWSC%2C%20I%20would%20like%20to%20learn%20more.">Contact Us</a></li>
+          <li><a
+              href="mailto:lwscuiuc@gmail.com?subject=Joining%20LWSC&body=Hello!%20I%20would%20like%20to%20join%20the%20club%20and%20learn%20more%20about%20your%20upcoming%20events.">Join
+              Us</a></li>
+          <li><a
+              href="mailto:lwscuiuc@gmail.com?subject=LWSC%20Inquiry&body=Hello%20LWSC%2C%20I%20would%20like%20to%20learn%20more.">Contact
+              Us</a></li>
         </ul>
       </div>
     </div>
@@ -654,15 +678,21 @@
     <div class="footer-bottom">
       <p>© 2025 LWSC Student Organization. All rights reserved.</p>
       <div class="footer-socials">
-        <a href="https://www.instagram.com/lwsc_uiuc?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">Instagram</a>
-        <a href="mailto:lwscuiuc@gmail.com?subject=Joining%20LWSC&body=Hello!%20I%20would%20like%20to%20join%20the%20club%20and%20learn%20more%20about%20your%20upcoming%20events.">Join Us</a></li>
-        <a href="mailto:lwscuiuc@gmail.com?subject=LWSC%20Inquiry&body=Hello%20LWSC%2C%20I%20would%20like%20to%20learn%20more.">Contact Us</a></li>
+        <a href="https://www.instagram.com/lwsc_uiuc?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+          target="_blank">Instagram</a>
+        <a
+          href="mailto:lwscuiuc@gmail.com?subject=Joining%20LWSC&body=Hello!%20I%20would%20like%20to%20join%20the%20club%20and%20learn%20more%20about%20your%20upcoming%20events.">Join
+          Us</a></li>
+        <a
+          href="mailto:lwscuiuc@gmail.com?subject=LWSC%20Inquiry&body=Hello%20LWSC%2C%20I%20would%20like%20to%20learn%20more.">Contact
+          Us</a></li>
       </div>
     </div>
   </footer>
 
   <script src="script.js"></script>
 </body>
+
 </html>
 
 <!-- <!DOCTYPE html>
